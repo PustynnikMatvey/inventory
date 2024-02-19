@@ -1,0 +1,7 @@
+Django
+djangorestframework
+django-filter
+django-rest-swagger
+django-model-utils
+requests
+psycopg2-binary
