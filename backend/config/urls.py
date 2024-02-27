@@ -17,7 +17,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from rest_framework.routers import DefaultRouter
-from inventory_service.views import get_inventory
+from inventory_service.views import get_inventory, grant_item
 
 from rest_framework_swagger.views import get_swagger_view
 
@@ -27,5 +27,6 @@ schema_view = get_swagger_view(title='inventory_service API')
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("swagger/", schema_view),
-    path("api/v1/get_inventory", get_inventory.as_view())
+    path("v1/inventory/get/", get_inventory.as_view()),
+    path("v1/inventory/grant/", grant_item.as_view())
 ]

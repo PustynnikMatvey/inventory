@@ -46,7 +46,8 @@ DJANGO_APPS = [
 
 THIRD_PARTY_APPS = [
     "rest_framework",
-    "rest_framework_swagger"
+    "rest_framework_swagger",
+    "django_extensions"
 ]
 PROJECT_APPS = [
     "inventory_service.apps.InventoryServiceConfig",
